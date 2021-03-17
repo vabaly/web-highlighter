@@ -3,6 +3,7 @@ import type HighlightSource from './index';
 import { ROOT_IDX } from '@src/util/const';
 
 /**
+ * 根据文本在父元素的位置从标签节点和文本节点组成的树中通过深度优先遍历找出文本所在的文本节点以及在文本节点中的位置
  * Because of supporting highlighting a same area (range overlapping),
  * Highlighter will calculate which text-node and how much offset it actually be,
  * based on the origin website dom node and the text offset.
